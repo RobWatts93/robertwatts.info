@@ -8,13 +8,14 @@
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy"
   },
-
-
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "axios":"^0.26.0"
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^2.0.0"
   }
 }

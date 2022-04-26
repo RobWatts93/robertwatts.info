@@ -1,0 +1,8 @@
+{
+    "layout": "carpentry-post",
+    "permalink": "/{{ page.fileSlug }}/",
+    "tags": "carpentry",
+    "title": "carpentry"
+ }
+  
+  

@@ -1,0 +1,20 @@
+
+
+<article>
+    <div class="card post-container">
+        <div class="image-container">
+            {% if post.data.src | length %}
+                {% image post.data.src, post.data.alt, undefined, "(max-width: 600px) 100vw, 600px", [300, 600] %}
+            {% endif %}
+        </div>        
+        <div class="container">
+            <h3>{{post.data.title}}</h3>
+            <p>{{post.data.text}}</p>
+        </div>
+    </div>
+
+
+
+    
+</article>
+

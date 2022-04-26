@@ -1,7 +1,11 @@
+const Image = require('./src/_shortcodes/image');
+ 
 module.exports = function (eleventyConfig) {
 
+    eleventyConfig.addShortcode('image', Image);
 
-    eleventyConfig.addPassthroughCopy("./src/css/")
+    eleventyConfig.addWatchTarget('./src/_static/scss/');
+    eleventyConfig.addPassthroughCopy("./src/_static/scss/");
 
     eleventyConfig.addFilter("randomItem", (arr) => {
         arr.sort(() => {
@@ -10,15 +14,17 @@ module.exports = function (eleventyConfig) {
         return arr.slice(0,1);
     });
 
+
+
     // Let Eleventy transform HTML files as nunjucks
     // So that we can use .html instead of .njk
     return {
         dir: {
             input: 'src',
-            output: 'public'
-        },
+          },
         htmlTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',
+        passthroughFileCopy: true
     };
 
 
