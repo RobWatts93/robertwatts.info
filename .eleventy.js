@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode('image', Image);
 
     eleventyConfig.addWatchTarget('./src/_static/scss/');
-    eleventyConfig.addPassthroughCopy("./src/_static/");
+    eleventyConfig.addPassthroughCopy("./src/_static/scss/");
 
     eleventyConfig.addFilter("randomItem", (arr) => {
         arr.sort(() => {
