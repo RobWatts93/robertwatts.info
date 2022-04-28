@@ -5,8 +5,6 @@ module.exports =   (src, alt, metadata, sizes, widths) => {
     widths = [300, 600, 1200];
   }
 
- 
-
   if (!sizes) {
     sizes = '(max-width: 1200px) 100vw, 1200px';
   }
@@ -35,7 +33,6 @@ module.exports =   (src, alt, metadata, sizes, widths) => {
   };
 
   let stats = Image.statsSync(src, options);
- 
 
   return Image.generateHTML(stats, imageAttributes)  ;
 };

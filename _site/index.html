@@ -4,58 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- TODO: This link is broken and css is being included below.  -->
     <link rel="stylesheet" type="text/css" href="/_static/scss/style.scss" media=”screen” />
- 
     <style>
         body {
     font-family: sans-serif;
 }
 
-.image-container {
-    max-width: 500px;
-    
-}
-
 .post-container {
     max-width: 500px;
-    
 }
 
-/* A basic outline around an element */
-.card {
+.post-container img { /* Add rounded corners to the top left and the top right corner of the image */
+    border-radius: 25px;
+    height: auto;
+    max-width: 100%;
+}
+
+.card { /* A basic outline around an element */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 25px; /* 5px rounded corners */
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
+.card:hover { /* On mouse-over, add a deeper shadow */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
   
-/* Add some padding inside the card container */
-.container {
+.card-content { /* Add some padding inside the card container */
     padding: 2px 16px;
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
-img {
-    border-radius: 5px 5px 0 0;
-}
+ 
     </style>
-    <title>My First Page</title>
+
+    <title>Bio of Rob Watts</title>
 </head>
 <body>
-    <header>
-        <h1>My First Page</h1>
-    </header>
-    <main>
+    
+<header>
+    <h1>Bio of Rob Watts</h1>
+</header>
+<main>
+    <div></div>
+    <div>
+        <h2> Blog Posts </h2>
         
-
-<h2> Blog Posts </h2>
-
- 
-
     <article>
         
 
@@ -65,16 +61,12 @@ img {
             
                 <picture><source type="image/avif" srcset="/_static/img/otwooZ6eJK-300.avif 300w, /_static/img/otwooZ6eJK-600.avif 600w" sizes="(max-width: 600px) 100vw, 600px"><source type="image/webp" srcset="/_static/img/otwooZ6eJK-300.webp 300w, /_static/img/otwooZ6eJK-600.webp 600w" sizes="(max-width: 600px) 100vw, 600px"><source type="image/jpeg" srcset="/_static/img/otwooZ6eJK-300.jpeg 300w, /_static/img/otwooZ6eJK-600.jpeg 600w" sizes="(max-width: 600px) 100vw, 600px"><img alt="Trailer with newly installed window" loading="lazy" decoding="async" whitespaceMode="inline" camera="undefined" fstop="undefined" exposure="undefined" focalLength="undefined" iso="undefined" location="undefined" src="/_static/img/otwooZ6eJK-300.jpeg" width="600" height="450"></picture>
             
-        </div>        
-        <div class="container">
+        </div>
+        <div class="card-content">
             <h3>Gorgeous! The finished product.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
-
-
-
-    
 </article>
 
 
@@ -89,25 +81,25 @@ img {
             
                 <picture><source type="image/avif" srcset="/_static/img/bzDQGLKUyX-300.avif 300w, /_static/img/bzDQGLKUyX-600.avif 600w" sizes="(max-width: 600px) 100vw, 600px"><source type="image/webp" srcset="/_static/img/bzDQGLKUyX-300.webp 300w, /_static/img/bzDQGLKUyX-600.webp 600w" sizes="(max-width: 600px) 100vw, 600px"><source type="image/jpeg" srcset="/_static/img/bzDQGLKUyX-300.jpeg 300w, /_static/img/bzDQGLKUyX-600.jpeg 600w" sizes="(max-width: 600px) 100vw, 600px"><img alt="Sarah designing trailer shell." loading="lazy" decoding="async" whitespaceMode="inline" camera="undefined" fstop="undefined" exposure="undefined" focalLength="undefined" iso="undefined" location="undefined" src="/_static/img/bzDQGLKUyX-300.jpeg" width="600" height="450"></picture>
             
-        </div>        
-        <div class="container">
+        </div>
+        <div class="card-content">
             <h3>Back in the lab, Sarah is checking measurements and doing touchups.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
-
-
-
-    
 </article>
 
 
     </article>
 
+    </div>
+    
+    <div></div>
+</main>
+
  
 
 
 
-    </main>
 </body>
 </html>

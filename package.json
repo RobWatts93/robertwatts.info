@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "cms": "npx netlify-cms-proxy-server",
+    "build": "npm-run-all build:sass build:eleventy",
+    "watch:sass": "sass --no-source-map --watch src/_static/scss:_site/_static/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass --no-source-map src/_static/scss:_site/_static/css",
+    "build:eleventy": "eleventy"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +22,8 @@
     "axios": "^0.26.1"
   },
   "devDependencies": {
-    "@11ty/eleventy-img": "^2.0.0"
+    "@11ty/eleventy-img": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.51.0"
   }
 }

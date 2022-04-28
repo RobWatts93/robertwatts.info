@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- TODO: This link is broken and css is being included below.  -->
     <link rel="stylesheet" type="text/css" href="{{ '/_static/scss/style.scss' | url }}" media=”screen” />
- 
     <style>
         {% include "src/_static/scss/style.scss" %}
     </style>
+
     <title>{{title}}</title>
 </head>
 <body>
-    <header>
-        <h1>{{ title }}</h1>
-    </header>
-    <main>
-        {{ content | safe }}
-    </main>
+    {{ content | safe }}
 </body>
 </html>

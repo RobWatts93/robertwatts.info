@@ -2,6 +2,7 @@ const Image = require('./src/_shortcodes/image');
  
 module.exports = function (eleventyConfig) {
 
+    // TODO: Which of these is neccessary?
     eleventyConfig.addShortcode('image', Image);
 
     eleventyConfig.addWatchTarget('./src/_static/scss/');
@@ -14,8 +15,6 @@ module.exports = function (eleventyConfig) {
         return arr.slice(0,1);
     });
 
-
-
     // Let Eleventy transform HTML files as nunjucks
     // So that we can use .html instead of .njk
     return {
@@ -26,8 +25,6 @@ module.exports = function (eleventyConfig) {
         markdownTemplateEngine: 'njk',
         passthroughFileCopy: true
     };
-
-
 
 };
 
